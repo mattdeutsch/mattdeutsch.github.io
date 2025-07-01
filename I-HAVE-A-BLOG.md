@@ -1,3 +1,7 @@
+layout: page
+title: "I-Have-a-Blog"
+permalink: /i-have-a-blog
+
 # I Have a Blog
 
 Welcome. Here I plan on writing a few posts about the things I've learned in my young career as a software engineer. I've worked in several organizations, large and small, and everywhere I've been, there has been little consensus or agreement on what "good code" means or looks like. I entered the workforce with tons of thoughts on Dijkstra's algorithm (which I have almost never thought about since learning it), but essentially thought-free on code quality (which impacts my/my coworkers quality of life extremely directly every day). In the first few years of my career, sometimes I wrote good code, but it was mostly by accident.
