@@ -5,7 +5,7 @@ categories: [code-quality]
 tags: [complexity, information-hiding]     # TAG names should always be lowercase
 ---
 
-I recently was a part of a meeting with a non-engineer on our company's leadership team where we discussed efforts our engineering team was taking to make our codebase simpler. One of my teammates excitedly mentioned that after their work is complete, our systems will be able to function while sending less information to each other.
+My team recently had a meeting with a member of our company's leadership, where a coworker of mine excitedly mentioned that after their work is complete, our systems will be able to function while sending less information to each other.
 
 The member of the leadership team asked an extremely reasonable follow-up question: 
 > "Isn't more information better?"
