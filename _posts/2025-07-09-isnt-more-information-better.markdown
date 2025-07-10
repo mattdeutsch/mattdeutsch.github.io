@@ -31,7 +31,7 @@ Irrelevant information limits what you and your barber can do and incentivizes w
 
 ## A Less Contrived Example
 
-In practice, it's rarely this straightforward to determine when a piece of data is or is not "irrelevant", and we usually make mistakes on the side of sharing too much data between systems instead of too little. As a young engineer, this is something I generally didn't worry about or consider really at all, so I wrote a lot of code that looks like the following, less contrived, bad example.
+In practice, it's rarely this straightforward to determine when a piece of data is or is not "irrelevant", and we usually make mistakes on the side of sharing too much data between systems instead of too little. As a young engineer, this is something I rarely worried about or considered at all, so I wrote a lot of code that looks like the following, less contrived, bad example.
 
 Suppose you need to write a function that calculates a user's age based on their date of birth. What's wrong with the following code?
 
