@@ -29,9 +29,9 @@ Irrelevant information limits what you and your barber can do and incentivizes w
 * Maybe the barber wants to open a branch in Vancouver, but their system won't allow them because Canadians don't have social security cards.
 * Maybe you decide this barber isn't worth using, since they're asking for too much, so you cut your hair yourself.
 
-In practice, it's difficult to determine when data is or is not "irrelevant", and we usually make mistakes on the side of sharing too much data between systems instead of too little. The barber/SSN example is, I admit, a little too contrived.
-
 ## A Less Contrived Example
+
+In practice, it's rarely this straightforward to determine when a piece of data is or is not "irrelevant", and we usually make mistakes on the side of sharing too much data between systems instead of too little.
 
 Here is an example of a mistake I used to commonly make. Suppose you need to write a function that calculates a user's age based on their date of birth. What's wrong with the following code?
 
