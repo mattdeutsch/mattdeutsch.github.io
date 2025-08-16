@@ -1,5 +1,5 @@
 ---
-title: Exceptions
+title: On Exception-al Code
 date: 2025-08-16 13:00:00 -0500
 categories: [code-quality]
 tags: [exceptions, dijkstra-mentioned]     # TAG names should always be lowercase
@@ -87,20 +87,21 @@ This type-checks[^1]. And from a local readability perspective, what a win! "Dri
 
 ## Why you shouldn't
 
-Extending the logic of the failure case will be difficult here, since while it's easy to raise an exception and move control flow to the global exception handler, **the exception handler is not designed to return control flow back to the main program**.
+Writing code this way could make extending the logic of the no-water case difficult here, since while it's easy to raise an exception and move control flow to the global exception handler, the exception handler is not designed to return control flow back to the main program.
 
-It will also surprise your teammates reading `drink(check_oasis(location))` that there's a branch in the code even occuring - the statement is written like it's an imperative statement to drink some water, but it's secretly an `if` statement that could lead you on a one-way road to your exception handler.
+It will also surprise your teammates reading `drink(check_oasis(location))` that there's a branch in the code even occuring - the statement is written like it's an imperative statement to drink some water, but it's secretly an `if` statement that could lead you down a one-way road to your exception handler.
 
-Using the exception handler essentially treats this exception as a GOTO, which has negatives we've known about since the time of Dijkstra's famous ["Go To considered harmful"](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf) paper in 1968.
+Using the exception handler essentially treats this as a GOTO, which has negatives we've known about since the time of Dijkstra's famous ["Go To Statement Considered Harmful"](https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf) paper in 1968.
 
-This is another minor reason to prefer Implementation 1, which returns `None`, to Implementaiton 2, which raises and locally catches an exception. Implementation 1 ensures that you and your teammates avoid touching the global exception handler.
+All of this is another minor reason to prefer Implementation 1, which returns `None`, to Implementation 2, which raises and locally catches an exception. Implementation 1 ensures that you and your teammates avoid touching the global exception handler.
 
 ## So where should I raise an exception?
 
 Honestly, wherever you want. The impacts discussed here are all fairly minimal, even in large programs. But if you're looking for my recommendation, exceptions should be raised exclusively when:
 
-1. You are comfortable halting execution of the program, if this excption is not caught.
+1. You are comfortable halting execution of the program, if this exception is not caught.
 2. You have enough context on the situation in which you are running to know whether statement #1 is true.
 
-### Footnotes
-[^1]:  ...so long as you're using a language like Python whose type-checking has no interest in what types of Exception a function might raise
+#### Footnotes
+
+[^1]:  ...so long as you're using a language like Python whose type-checker has no interest in what types of Exception a function might raise.
