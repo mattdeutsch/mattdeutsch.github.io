@@ -1,6 +1,6 @@
 ---
 title: Tech Debt and the Ski Rental Problem
-date: 2025-11-11 9:06:00 -0500
+date: 2025-11-11 21:06:00 -0500
 categories: [engineering-practices]
 tags: [tech-debt, ski-rental, algorithms-to-live-by]
 ---
