@@ -13,7 +13,7 @@ Series A: **Why do we eat matzah when on other nights we eat bread?** Series A i
 
 Series B: **Why on this night do we eat bitter herbs?** Your startup at this stage isn't always going to be fun. Sometimes you're going to have to buckle down and do the dirty work yourself. When a bitter task is critical, sometimes you won't be able to find some idiot on the job market to do it for you. In those cases, you have to step in and eat the bitter herbs yourself!
 
-Series C: **On other nights, we don't even dip once, but tonight we dip twice. Why?** At the seder table, we dip vegetables in salt water as a reminder of the tears of my enslaved ancestors. In our daily standup meeting, we recount the trials and tribulations of the last day in much the same way.
+Series C: **On other nights, we don't even dip once, but tonight we dip twice. Why?** At the seder table, we dip vegetables in salt water as a reminder of the tears of our enslaved ancestors. In our daily standup meeting, we recount the trials and tribulations of the last day in much the same way.
 
 Series D: **Why on this night do we recline while eating?** As a startup founder with a growth mindset, it can be difficult to find time to prioritize your own health and rest. If you want more help resting, consider buying my 35 dollar e-book on how to rest more effectively in your precious and limited downtime.
 
